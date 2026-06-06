@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    {% for i in newss %}
+    <div>
+       <h4> {{ i.headline }}</h4>
+       <p> {{ i.body}} </p>
+       <p>{{ i.date }} </p>
+    </div>
+    {% endfor %}
+  {% endblock content %}
+
+    
